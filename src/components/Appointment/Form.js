@@ -43,6 +43,7 @@ export default function Form(props) {
             onChange={(event) => setName(event.target.value)}
             onSubmit={(event) => event.preventDefault()}
           />
+          <section className="appointment__validation">{error}</section>
         </form>
         <InterviewerList interviewers={props.interviewers} value={interviewer} onChange={setInterviewer} />
       </section>
