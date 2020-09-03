@@ -14,3 +14,17 @@ export function getAppointmentsForDay(state, day) {
   return box.length ? box : [];
 
 };
+
+export function getInterview(state, interview) {
+  if (!interview) {
+    return null;
+  }
+  const object = {};
+  object.student = interview.student;
+  object.interviewer = state.interviewers[interview.interviewer];
+  console.log("this is object", object)
+  console.log("this is interview.student", interview.student)
+  console.log("this is state.interviewers[interview.interviewer]", state.interviewers[interview.interviewer])
+  return object;
+
+}
