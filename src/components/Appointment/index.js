@@ -4,6 +4,13 @@ import Header from './Header';
 import Show from './Show';
 import Empty from './Empty';
 
+const EMPTY = "EMPTY";
+const SHOW = "SHOW";
+const CREATE = "CREATE";
+const SAVING = "SAVING";
+const EDIT = "EDIT";
+const CONFIRM = "CONFIRM";
+
 export default function Appointment(props) {
   return (
     <article className="appointment">
