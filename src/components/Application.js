@@ -29,7 +29,7 @@ export default function Application(props) {
     return axios
       .put(`http://localhost:8001/api/appointments/${id}`, appointment)
       .then(() => setState({ ...state, appointments }))
-      .catch(error => console.log(error));
+    // .catch(error => console.log(error));
   }
   //When we cancel an interview it will have its value set to null.If the interview is null and we are still in the SHOW mode then we may get a TypeError.
   function cancelInterview(id) {
@@ -45,7 +45,7 @@ export default function Application(props) {
     return axios
       .delete(`http://localhost:8001/api/appointments/${id}`)
       .then(() => setState({ ...state, appointments }))
-      .catch(error => console.log(error));
+    // .catch(error => console.log(error));
   }
 
   useEffect(() => {
@@ -61,7 +61,7 @@ export default function Application(props) {
         interviewers: all[2].data
       }))
     })
-      .catch(error => console.log(error));
+    //     .catch(error => console.log(error));
   }, []);
 
 
