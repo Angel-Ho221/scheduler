@@ -30,17 +30,18 @@ export default function Form(props) {
     setError("");
     props.onSave(name, interviewer);
   }
+
   return (
     <main className="appointment__card appointment__card--create">
       <section className="appointment__card-left">
-        <form autoComplete="off">
+        <form autoComplete="off" onSubmit={event => event.preventDefault()}>
           <input
             className="appointment__create-input text--semi-bold"
-            name={name}
+            name="name"
             type="text"
+            value={name}
             placeholder="Enter Student Name"
-            onChange={(event) => setName(event.target.value)}
-            onSubmit={(event) => event.preventDefault()}
+            onChange={event => setName(event.target.value)}
           />
           <section className="appointment__validation">{error}</section>
         </form>

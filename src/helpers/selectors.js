@@ -14,14 +14,16 @@ export function getAppointmentsForDay(state, day) {
 };
 
 export function getInterview(state, interview) {
+
   if (!interview) {
     return null;
   }
-  const object = {};
+  const newInterview = {
+    ...interview,
+    interviewer: { ...state.interviewers[interview.interviewer] }
+  }
 
-  object.student = interview.student;
-  object.interviewer = state.interviewers[interview.interviewer];
-  return object;
+  return newInterview;
 
 }
 
@@ -35,6 +37,7 @@ export function getInterviewersForDay(state, day) {
       })
     }
   });
+
   return box.length ? box : [];
 
 }
