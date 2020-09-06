@@ -18,7 +18,6 @@ export default function Form(props) {
     reset();
     props.onCancel();
   }
-
   const validate = () => {
     if (!name) {
       setError("Cannot leave student name blank");
