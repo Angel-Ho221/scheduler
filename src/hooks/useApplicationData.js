@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import "components/Application.scss";
 
@@ -43,7 +43,6 @@ export default function useApplicationData() {
 
       .then((response) => {
         const days = response.data
-        console.log(response)
         setState({ ...state, appointments, days })
       })
   }

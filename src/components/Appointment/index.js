@@ -54,7 +54,7 @@ export default function Appointment(props) {
   }
 
   return (
-    <article className="appointment">
+    <article className="appointment" data-testid="appointment">
       <Header time={props.time} />
       {/* user clicks on the add appointment, should transistion to the CREATE mode. returns an object that contains a transition function */}
 
