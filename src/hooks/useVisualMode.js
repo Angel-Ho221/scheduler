@@ -1,7 +1,3 @@
-// initial mode
-//mode state withthe intial mode
-// reutrn an obj witha mode property
-
 import { useState } from 'react';
 
 export default function useVisualMode(initial) {

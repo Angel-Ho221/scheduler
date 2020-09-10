@@ -10,7 +10,6 @@ export function getAppointmentsForDay(state, day) {
 
   });
   return box.length ? box : [];
-
 };
 
 export function getInterview(state, interview) {
@@ -22,9 +21,7 @@ export function getInterview(state, interview) {
     ...interview,
     interviewer: { ...state.interviewers[interview.interviewer] }
   }
-
   return newInterview;
-
 }
 
 export function getInterviewersForDay(state, day) {
@@ -37,7 +34,5 @@ export function getInterviewersForDay(state, day) {
       })
     }
   });
-
   return box.length ? box : [];
-
 }

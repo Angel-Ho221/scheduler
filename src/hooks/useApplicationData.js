@@ -31,11 +31,11 @@ export default function useApplicationData() {
   function bookInterview(id, interview) {
     const appointment = {
       ...state.appointments[id],
-      interview: { ...interview } // on index.js, this interview input will be the interview object that will be updating the appointment data 
+      interview: { ...interview }
     }
     const appointments = {
       ...state.appointments,
-      [id]: appointment //Here, we are assigning the updated appointment to the appointments objects
+      [id]: appointment
     };
     //call setState wtih the new state object (do promise here)
     return axios.put(`http://localhost:8001/api/appointments/${id}`, appointment)

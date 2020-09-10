@@ -11,7 +11,7 @@ import useVisualMode from '../../hooks/useVisualMode';
 
 export default function Appointment(props) {
   //using hook if props.interview contains a value - pass useVisualMode the SHOW mode, otherwise, EMPTY
-  // const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
   const EMPTY = "EMPTY";
   const SHOW = "SHOW";
   const CREATE = "CREATE";
@@ -39,7 +39,7 @@ export default function Appointment(props) {
       .bookInterview(props.id, interview)
       .then(() => transition(SHOW))
       .catch(error => transition(ERROR_SAVE, true));
-  }
+  };
 
   //function to delete an interview
   function deleteInterview() {
@@ -50,8 +50,7 @@ export default function Appointment(props) {
       .cancelInterview(props.id)
       .then(() => transition(EMPTY))
       .catch(error => transition(ERROR_DELETE, true));
-
-  }
+  };
 
   return (
     <article className="appointment" data-testid="appointment">
