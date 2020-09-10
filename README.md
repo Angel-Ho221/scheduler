@@ -6,6 +6,6 @@ NOTE: This project was developed for learning purposes only through Lighthouse L
 
 ##Screenshots
 
-!["Tweeter Home Page"](https://github.com/Angel-Ho221/tweeter/blob/master/docs/HomePage.png?raw=true)
-!["Characters limit"](https://github.com/Angel-Ho221/tweeter/blob/master/docs/Char-limit.png?raw=true)
-!["People's Tweet"](https://github.com/Angel-Ho221/tweeter/blob/master/docs/PeopleTweeting.png?raw=true)
+!["Booked Appointments"](https://github.com/Angel-Ho221/scheduler/blob/master/docs/Booked_Appointments.png?raw=true)
+!["Student Name & Interviewer selector"](https://github.com/Angel-Ho221/scheduler/blob/master/docs/Student_Name_Input.png?raw=true)
+!["Delete_Confirmation"](https://github.com/Angel-Ho221/scheduler/blob/master/docs/Delete_Confirmation.png?raw=true)
